@@ -1,0 +1,27 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+h2,h6 {
+
+@font-face {
+    font-family: Roboto;
+    src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+
+}
+
+p {
+@font-face {
+    font-family: OpenSans;
+    src: url(Font/OpenSans/OpenSans-Regular.ttf);
+}}
+
+ a {
+  text-decoration: none;
+ }
+
+ ul li {
+  list-style: none;
+ }

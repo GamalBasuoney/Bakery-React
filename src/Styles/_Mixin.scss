@@ -1,0 +1,13 @@
+@mixin text($fontStyle) {
+    text-transform: ($fontStyle);
+}
+
+@mixin font($size,$weight,$family) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+}
+
+@mixin marginBottom($val){
+    margin-bottom: $val;
+}
