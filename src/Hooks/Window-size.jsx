@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-
+import { useState, useEffect } from "react"
 export default function useWindowSize() {
   const [size, setSize] = useState({
     width: undefined,
@@ -15,13 +14,11 @@ export default function useWindowSize() {
         scrollY: window.pageYOffset,
       });
     }
-    window.addEventListener("resize", updateSize);
-    window.addEventListener("scroll", updateSize);
-    updateSize();
 
     return () => {
-      window.removeEventListener("resize", updateSize);
-      window.removeEventListener("scroll", updateSize);
+      window.addEventListener("resize", updateSize);
+      window.addEventListener("scroll", updateSize);
+      updateSize();
     };
   }, []);
   return size;
